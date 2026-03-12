@@ -2,6 +2,7 @@
   "name": "airbnb",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vanhoang1103.github.io/About-US",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
     "@fortawesome/free-brands-svg-icons": "^7.2.0",
@@ -23,9 +24,11 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+  "build": "react-app-rewired build",
+  "test": "react-app-rewired test",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +50,7 @@
   },
   "devDependencies": {
     "customize-cra": "^1.0.0",
+    "gh-pages": "^6.3.0",
     "react-app-rewired": "^2.2.1"
   }
 }
