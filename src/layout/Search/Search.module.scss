@@ -6,12 +6,13 @@
   align-items: center;
   background-color:#F8F8F8;
   padding: 4px 0 4px 0;
+  position: relative;
 }
 
 .header_search_items {
     padding: 15px;
     margin: 0px 5px 0px 5px;
-    width: 15%;
+    width: 20%;
     cursor: pointer;
     background-color: #fff;
     border-radius: 40px;
@@ -66,4 +67,65 @@
 .icon{
     color: #fff;
 }
+
+.Search_down {
+    position: absolute;
+    top: 80px;
+    left: 19%;
+    width: 400px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 2;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+
+
+.Search_down_h {
+    margin: 0;
+    padding: 5px;
+    text-align: start;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.Search_down_items {
+    display: flex;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.Search_down_items:hover{
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+.img {
+    width: 50px;
+    height: 50px;
+}
+
+.Search_down_content {
+    text-align: start;
+    margin-left: 10px;
+
+}
+
+.Search_down_content_1 {
+    font-size: 1rem;
+    color: #222222;
+    padding: 3px 0 3px 0;
+    margin: 0;
+    align-items: start;
+}
+.Search_down_content_2 {
+    font-size: 0.8rem;
+    color: #6A6A6A;
+    padding: 3px 0 3px 0;
+    margin: 0;
+    align-items: start;
+}
+
 

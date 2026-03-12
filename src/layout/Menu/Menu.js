@@ -1,15 +1,28 @@
 import { faBars, faQuestion } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useState , useRef, useEffect } from "react";
 import style from "./Menu.module.scss"
 import classNames from "classnames/bind";
 
 const cx = classNames.bind(style)
 function Menu() {
   const [open, setOpen] = useState(false);
+  const dropdownRef = useRef(null);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
-    <div className={cx('menu_container')}>
+    <div className={cx('menu_container') } ref={dropdownRef}>
       <button 
         className={cx("menu_btn")}
         onClick={() => setOpen(!open)}
