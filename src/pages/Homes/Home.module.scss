@@ -3,62 +3,58 @@
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
-
-.logo{
-  color: #FF385C;
+.logo {
+  color: #ff385c;
 }
-
 
 .menu {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .icon {
   color: #ccc;
 }
 .menu_item {
   text-decoration: none;
-  color: #6A6A6A;
-  position:relative;
-  display:flex;
-  align-items:center;
-  padding:10px 10px;
+  color: #6a6a6a;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
   margin: 10px 10px;
   font-weight: 550;
-
 }
 
 .menu_item:hover {
   color: #000;
 }
-.menu_item::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:-5px;
-  width:0;
-  height:3px;
-  background:black;
-  transition:0.3s;
+.menu_item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: black;
+  transition: 0.3s;
 }
 
 .menu_item.active {
-    color: #000;
+  color: #000;
 }
 
-.menu_item:hover::after{
-  width:100%;
+.menu_item:hover::after {
+  width: 100%;
 }
-.menu_item.active::after{
-  width:100%;
+.menu_item.active::after {
+  width: 100%;
 }
 .icon.active {
-    color: #000;
+  color: #000;
 }
 
 .language {
@@ -67,26 +63,9 @@
   align-items: center;
 }
 .language_font {
-  color: #6A6A6A;
+  color: #6a6a6a;
   font-weight: 550;
   margin: 0 3px 0 3px;
   padding: 7px;
   font-size: 1.3rem;
-}
-
-
-
-
-
-.header_search_i {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-.header_search_items {
-  padding: 5px;
-  margin: 0px 5px 0px 5px;
-  width: 15%;
 }
